@@ -1,0 +1,139 @@
+@import url(/reset.css);
+
+.room {
+	height: 100%;
+	width: 100%;
+	background: radial-gradient(circle at center, #c5c5c5, #919191);
+}
+
+.container {
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 250px 0 0 200px;
+	-webkit-transform: perspective(600px);
+	transform: perspective(600px);
+}
+
+.table {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.carcass {
+	position: relative;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.carcass__bar {
+	height: 30px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: absolute;
+}
+
+.carcass__bar-long {
+	width: 850px;
+}
+
+.carcass__bar-short {
+	width: 380px;
+}
+
+.carcass__bar-lower {
+	top: 350px;
+}
+
+.carcass__bar-left {
+	left: -100px;
+}
+
+.carcass__bar-left.carcass__bar-vertical {
+	-webkit-transform: rotateZ(90deg) translateX(175px) translateY(75px);
+	transform: rotateZ(90deg) translateX(175px) translateY(75px);
+}
+
+.carcass__bar-left.carcass__bar-horizontal {
+	-webkit-transform: rotateY(90deg) translateX(200px) translateZ(-75px);
+	transform: rotateY(90deg) translateX(200px) translateZ(-75px);
+}
+
+.carcass__bar-right {
+	left: 820px;
+}
+
+.carcass__bar-right.carcass__bar-vertical {
+	-webkit-transform: rotateZ(90deg) translateX(175px) translateY(175px);
+	transform: rotateZ(90deg) translateX(175px) translateY(175px);
+}
+
+.carcass__bar-right.carcass__bar-horizontal {
+	-webkit-transform: rotateY(90deg) translateX(200px) translateZ(-175px);
+	transform: rotateY(90deg) translateX(200px) translateZ(-175px);
+}
+
+.carcass__bar-rear {
+	-webkit-transform: translateZ(-400px);
+	transform: translateZ(-400px);
+}
+
+.carcass__bar-rear.carcass__bar-left.carcass__bar-vertical {
+	-webkit-transform: rotateZ(90deg) translateX(175px) translateY(75px) translateZ(-400px);
+	transform: rotateZ(90deg) translateX(175px) translateY(75px) translateZ(-400px);
+}
+
+.carcass__bar-rear.carcass__bar-left.carcass__bar-horizontal {
+	-webkit-transform: rotateY(90deg) translateX(200px) translateZ(-75px) translateZ(-400px);
+	transform: rotateY(90deg) translateX(200px) translateZ(-75px) translateZ(-400px);
+}
+
+.carcass__bar-rear.carcass__bar-right.carcass__bar-vertical {
+	-webkit-transform: rotateZ(90deg) translateX(175px) translateY(175px) translateZ(-400px);
+	transform: rotateZ(90deg) translateX(175px) translateY(175px) translateZ(-400px);
+}
+
+.carcass__bar-rear.carcass__bar-right.carcass__bar-horizontal {
+	-webkit-transform: rotateY(90deg) translateX(200px) translateZ(-175px) translateZ(-400px);
+	transform: rotateY(90deg) translateX(200px) translateZ(-175px) translateZ(-400px);
+}
+
+.carcass__texture {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	position: absolute;
+	background: url(/Img/1627590561_9-kartinkin-com-p-shlifovannii-metall-tekstura-besshovnaya-k-25.jpg);
+}
+
+.carcass__texture-upper {
+	-webkit-transform: rotateX(90deg) translateZ(15px);
+	transform: rotateX(90deg) translateZ(15px);
+}
+
+.carcass__texture-rear {
+	-webkit-transform: translateZ(-15px);
+	transform: translateZ(-15px);
+}
+
+.carcass__texture-lower {
+	-webkit-transform: rotateX(90deg) translateZ(-15px);
+	transform: rotateX(90deg) translateZ(-15px);
+}
+
+.carcass__texture-front {
+	-webkit-transform: translateZ(15px);
+	transform: translateZ(15px);
+}
+
+.carcass:hover {
+	-webkit-transform: rotateY(90deg) rotateX(35deg) translateZ(100px);
+	transform: rotateY(90deg) rotateX(35deg) translateZ(100px);
+}
